@@ -63,7 +63,7 @@
                 animation: up-section;
                 animation-duration: 3s;
                 position: sticky;
-                margin-top: 2%;
+                margin-top: 0;
                 transition-timing-function: ease;
             }
             
@@ -73,7 +73,7 @@
                 margin-top: 100%;
             }to{
                 position: sticky;
-                margin-top: 2%;
+                margin-top: 0;
                 
             }}        
 
@@ -92,22 +92,35 @@
             }
 
             p{
-               position: flex;
-               flex-direction: row; 
+               position: fixed;
+               top: 0; 
                color: seashell;
                font: 300% bold;
                font-family: papyrus, fantasy;
                margin: 0;
                padding: 0;
-               text-align: center;
+               text-align: left;
+               animation: sparingi-napis;
+               animation-duration: 3s;
                
+            }
+
+            @keyframes sparingi-napis {
+                from{
+                    font: 10% bold;
+                    font-family: papyrus, fantasy;
+                }
+                to{
+                    font: 300% bold;
+                    font-family: papyrus, fantasy;
+                }
             }
 
         </style>
     </head>
     <body>
         <img class="logo" src="https://www.csw-baribal.pl/wp-content/uploads/2017/05/cropped-logo.png" />
-        <p>SPARINGI</p>
+        <p class="sparing">SPARINGI</p>
         <section id="links" class="links">
             
             <a target="_blank" id="Spary-21.07.2023" href="https://youtube.com/watch?v=jhRBmeKVkPw">
