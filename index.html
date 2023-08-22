@@ -18,6 +18,18 @@
             background: transparent; /* make scrollbar transparent */
             }
 
+            @media only screen and (max-width: 768px) {
+                b {
+                  font-size: 20px;
+                }
+              }
+              
+            @media only screen and (max-width: 320px) {
+              b {
+                font-size: 10px;
+              }
+            }
+
             img{
                 display: block;
                 width: 100%;
@@ -40,7 +52,7 @@
                 animation: enter-page;
                 animation-duration: 1s;
                 color: black;
-                font-size: 90%;
+                font-size: auto;
                 border: black solid;
                 border-top-left-radius: 0.1rem;
                 border-top-right-radius: 0.1rem;
@@ -121,7 +133,7 @@
     </head>
     <body>
         <img class="logo" src="https://www.csw-baribal.pl/wp-content/uploads/2017/05/cropped-logo.png" />
-        <p class="sparing">SPARINGI</p>
+        <!-- <p class="sparing">SPARINGI</p> -->
         <section id="links" class="links">
             
             <a target="_blank" id="Spary-21.07.2023" href="https://youtube.com/watch?v=jhRBmeKVkPw">
