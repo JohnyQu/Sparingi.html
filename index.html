@@ -18,12 +18,7 @@
             background: transparent; /* make scrollbar transparent */
             }
             
-            @media only screen and (max-width: 768px) {
-                /* For mobile phones: */
-                a{
-                  width: 100%;
-                }
-              }
+            
             
 
             img{
@@ -37,12 +32,13 @@
 
             a{
                 display: inline-grid;
-                grid-template: auto auto;
+                grid-template-column: auto auto auto;
                 grid-gap: 1%;
+                margin-top: 1%;
                 justify-content: center;
                 align-items: center;
                 margin: auto;
-                margin-left: 3%;
+                
                 background: #fd3c3d;
                 width: 45%;
                 text-align: center;
@@ -57,6 +53,13 @@
                 border-bottom-left-radius: 10%;
                 border-bottom-right-radius: 10%;
             }
+            @media only screen and (min-width: 728px) {
+                /* For mobile phones: */
+                a{
+                  width: 32%;
+                  margin: 0.55%;
+                }
+              }
 
             a:hover{
                 color: #fd3c3d;
