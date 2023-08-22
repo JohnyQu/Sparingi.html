@@ -101,18 +101,19 @@
                padding: 0;
                text-align: left;
                animation: sparingi-napis;
-               animation-duration: 3s;
+               animation-duration: 5s;
                
             }
 
             @keyframes sparingi-napis {
-                from{
-                    font: 10% bold;
-                    font-family: papyrus, fantasy;
+                0%{
+                    opacity: 0;
                 }
-                to{
-                    font: 300% bold;
-                    font-family: papyrus, fantasy;
+                80%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
                 }
             }
 
